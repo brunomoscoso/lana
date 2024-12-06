@@ -1,0 +1,412 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+SK:wght@100..400&display=swap');
+
+:root {
+    --cor1:#ffffcc;
+    --cor2:#f8e6c6;
+    --cor3:#eecfc4;
+    --cor4:#e2c3c6;
+    --cor5:#d3c6cc;
+    --fonte: "Josefin Slab", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+}
+header{
+    background-image: url(../imagem/lana.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    scroll-snap-align: start;
+}
+#borda{
+    margin: auto;
+    border: 18px white solid;
+    height: 75vh;
+    width: 90vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#caixa{
+    display: flex;
+    align-items: center;
+}
+#button1{
+    padding: 3px;
+    border: none;
+    background-color: #a10b1a91;
+    border-radius: 10px;
+    margin-left: 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.341);
+    
+}
+#caixa-pesquisa{
+    border: none;
+    background-color: #72000b75;
+    border-radius: 5px;
+    height: 32px;
+    width: 20vw;
+    margin-left: 10px; 
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.341);  
+}
+#lupa{
+    color:rgba(255, 255, 255, 0.466);
+    height: 8px;
+    padding: 10px;   
+}
+#button1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 25px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: rgba(218, 192, 192, 0.445);
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li:hover ul{
+    display: block;
+    text-align: center;
+    font-family: var(--fonte);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+#strong1{
+    color: #72000c;
+    background-color: rgba(218, 192, 192, 0.445);
+}
+#icone-navegar1{
+    text-decoration: none;
+    font-family:var(--fonte);
+    padding: 50px;
+    font-size: 2.6em;
+    color:white;
+    font-weight: lighter;
+}
+.icone-navegar{
+    text-decoration: none;
+    font-family:var(--fonte);
+    padding: 50px;
+    font-size: 2.6em;
+    color:white;
+    font-weight: lighter;
+}
+.icone-navegar:hover{
+    background-color: rgba(250, 235, 215, 0.151);
+}
+#lana-del-rey{
+    font-family: "Playwrite SK", cursive;
+    color: white;
+    font-size: 3.5em;
+    padding: 10px;
+}
+body{
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    scroll-snap-align: start;
+}
+#historia{
+    padding: 80px;
+    width: 70vh;
+}
+#foto-main{
+    padding: 60px;
+}
+#imagem-main{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.434);
+}
+#linha{
+    margin-top: 40px;
+    width: 1px;
+    color: black;
+    border: 2px black solid;
+    background-color: #91281e;
+    height: 95vh;
+}
+.paragrafo-historia{
+    margin-top: 20px;
+    font-family: "Josefin Slab", serif;
+    text-align: justify;
+    font-size: 2.4em;
+}
+#gallery{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 4vw 1vw;
+    background-color: #91281e;
+    scroll-snap-align: start;
+}
+.foto-gallery{
+    width: 190px;
+    height: 250px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.434);
+    flex-grow: 1;
+    filter: opacity(80%);
+}
+.foto-gallery1{
+    width: 310px;
+    height: 250px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.434);
+    flex-grow: 1;
+    filter: opacity(79%);
+}
+.foto-gallery:hover,.foto-gallery1:hover{
+    transform: scale(1.1);
+    filter: none;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px white solid;
+    border-radius: 3px;
+}
+#area-shop{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+#paragrafo-shop{
+    padding: 70px;
+    height: 10vh;
+    font-weight: 400;
+    font-family: var(--fonte);
+    text-align: center;
+    font-size: 4em;
+    font-weight:100;
+}
+#imagem-cd1, #imagem-cd3{
+    width: 320px;
+    height: 320px;
+}
+#imagem-cd2{
+    width: 440px;
+    height: 440xp;
+}
+.active-shop:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#button2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 18px;
+    font-family: var(--fonte);
+    background-color: #b911112a;
+    text-decoration: none;
+    text-align: center;
+    width: 30%;
+    height: 4vh;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 12px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.204);
+}
+#button2:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.107);
+}
+#button2:active{
+    font-size: 13px;
+    background-color: #91281e00;
+    color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.341);
+}
+#turne{
+    background-color: #721208ee;
+    width: 100%;
+    height:100%;
+    scroll-snap-align: start;
+    
+}
+#titulo-turne{
+    font-family: var(--fonte);
+    text-align: end;
+    font-weight: 300;
+    color: white;
+    font-size: 3em;
+    padding: 30px;
+}
+.data-link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte);
+    font-size: 20px;
+}
+.datas-turne:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#box-datas{
+    padding: 50px;
+    
+}
+.datas-turne{
+    background-color: rgba(240, 248, 255, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
+}
+.dia-show{
+    background-color: rgba(126, 124, 124, 0.719);
+    padding: 9px;
+    margin-right: 18px;
+    border-radius: 6px;
+}
+#contatos{
+    background-color: #ee6b5f0e;
+    margin-top: 10px;
+    scroll-snap-align: start;
+    height: 100vh;
+    text-align: center;
+    color: #91281e;
+}
+#titulo-contatos{
+    padding: 10px;
+    font-size: 5em;
+    font-family: var(--fonte);
+    font-weight: 600;
+}
+#subtitulo-contatos{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: var(--fonte);
+}
+#borda2{
+    margin: auto;
+    border: 8px rgb(78, 9, 9) solid;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+#end-form{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.infcontatos{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    font-size: 26px;
+}
+#mail{
+    text-decoration: none;
+    color: #72000c;
+}
+.mb-3{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+}
+#seunome{
+    width: 350px;
+    height: 30px;
+}
+#exampleFormControlInput1{
+    width: 350px;
+    height: 30px;
+}
+#exampleFormControlTextarea1{
+    width: 350px;
+    height: 60px;
+}
+.form-control{
+    background-color: #e6867d25;
+    text-align: center;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.341);
+}
+#botaoenviar{
+    font-size: 17px;
+    color: rgb(99, 99, 99);
+    font-family: var(--fonte);
+    background-color: #8b180e38;
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.341);
+    border:none;
+}
+#botaoenviar:hover{
+    transform: scale(0.97);
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.107);
+}
+footer{
+    background-color: #91281e23;
+    margin-top: 5px;
+    height: 100;
+    font-family: var(--fonte);
+    scroll-snap-align: start;
+    text-align: center
+}
+footer>div>p{
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.redessociais{
+    margin-top: 10px;
+    padding: 5px;
+    height: 20px;
+}

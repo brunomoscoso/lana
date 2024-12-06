@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 350px) and (max-width: 700px) {
+    header {
+        background-image: url("../mw-1143.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        width: 100%;
+    }
+    #borda{
+        visibility: hidden;
+    }
+    #lana-del-rey{
+        visibility: hidden;
+    }
+    #lista-menu{
+        position: absolute;
+        top:200px;
+    }
+    #caixa{
+        visibility: hidden;
+    }
+    .icone-navegar, #icone-navegar1{
+        color: #91281e;
+        font-weight: bolder;
+    }
+    #lista-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:-20px;
+        font-size: 10px;
+        font-weight: bolder;
+        font-style: oblique;
+    }
+    nav ul li:hover ul{
+        visibility: hidden;
+    }
+    #historia{
+        font-size: 10px;
+    }
+    #linha{
+        margin-top: 4px;
+        width: 50vw;
+        color: black;
+        border: 2px black solid;
+        background-color: #91281e;
+        height: 1px;
+    }
+    #linha1{
+        margin-top: 50px;
+        width: 50vw;
+        color: black;
+        border: 2px black solid;
+        background-color: #91281e;
+        height: 1px;
+    }
+    #gallery{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2vw;
+        padding: 4vw 1vw;
+        background-color: #91281e;
+        scroll-snap-align: start;
+    }
+    #gallery_img1{
+        object-fit: cover;
+        object-position: top;
+        
+    }
+    .gallery_img{
+        width: 96%;
+        height: 96%;
+    }
+    #area-shop{
+        height: 100%;
+    }
+    #paragrafo-shop{
+        font-size: 30px;
+        padding: 0;
+        margin-top: 20px;
+    }
+    #shop{
+        padding: 0;
+        top: 200px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #imagem-cd1, #imagem-cd2, #imagem-cd3{
+        height: 200px;
+        width: 200px;
+        
+    }
+    #button2{
+        color: white;
+        font-weight: bolder;
+        background-color: #91281edc;
+        width: 50%;
+        font-size: 10px;
+    }
+    #end-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-inf{
+        font-size: 23px;
+    }
+    #borda2{
+        width: 99vw;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1280px){
+    header {
+        background-image: url("../imagem/lana.png");
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        width: 100%;
+    }
+    .icone-navegar, #icone-navegar1{
+        font-size: 40px;
+        padding: 10px;        ;
+    }
+    nav ul li:hover ul{
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    #linha{
+        visibility: hidden;
+    }
+    #linha1{
+        margin-top: 50px;
+        width: 50vw;
+        color: black;
+        border: 2px black solid;
+        background-color: #91281e;
+        height: 1px;
+    }
+    #historia{
+        padding: 40px;
+        width: 100%;
+    }
+    .gallery_img{
+        width: 96%;
+        height: 96%;
+    }
+    #gallery{
+        height: 100%;
+        width: 60%;
+    }
+    #imagem-cd1, #imagem-cd2, #imagem-cd3{
+        height: 200px;        
+    }
+    #shop{
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #end-form{
+        display: flex;
+        flex-direction: column;
+    }
+}
